@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 // #d1d174
 // #1571f7'
 export default function Navbar(props){
+
+    let textColor;
+    if (props.mode === 'pink') {
+        textColor = 'black';
+      } else if (props.mode === 'white') {
+        textColor = 'black';
+      } else {
+        textColor = 'white';
+      }
     return (
         <div>
             {/* <nav className="navbar navbar-expand-lg bg-body-tertiary"> */}
@@ -33,7 +42,9 @@ export default function Navbar(props){
             </div>
             <div className="form-check form-switch my-3">
             <input onClick = {props.artisticmode} className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-            <label style={{'color':props.mode === 'pink'?'white':'black'}} className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Artistic Mode</label>
+            {/* <label style={{'color':props.mode === 'pink'?'blue':'yellow'}} className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Artistic Mode</label> */}
+            {/* <label style={{'color':props.mode === 'pink'?'black': props.mode === 'white'?'black': 'white'}} className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Artistic Mode</label> */}
+            <label style={{'color':textColor}} className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Artistic Mode</label>
             </div>
             </nav>
         </div>
