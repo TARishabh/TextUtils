@@ -1,4 +1,49 @@
-.App {
+
+#exampleFormControlTextarea1{
+  height: 50vh;
+  margin-top: 50px;
+  width: 70vh;
+  display: block;
+  margin-left: 60vh;
+}
+
+#upper{
+  margin-top: 80px;
+  margin-left: 700px;
+}
+
+#lower{
+  margin-top: 80px;
+  margin-left: 300px;
+}
+
+.form-label{
+  font-size: 30px;
+  margin-left: 60vh;
+}
+
+.navbar-brand{
+  font-size: 5vh;
+  color:#1571f7;
+}
+
+.summary{
+  padding-top: 100px;
+  color: black
+}
+
+.custom{
+  margin-left: 800px;
+}
+.customclass{
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 5px;
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +80,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
